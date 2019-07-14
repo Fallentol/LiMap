@@ -2,10 +2,10 @@ import java.util.Random;
 
 public class Config {
 
-    public static final int startX = new Random().nextInt(Config.WIDTH);
-    public static final int startY = new Random().nextInt(Config.HEIGHT);
+    public static final int startX = new Random().nextInt(3);
+    public static final int startY = new Random().nextInt(3);
     public static final int finishX = 28;
-    public static final int finishY = 1;
+    public static final int finishY = 28;
 
     public static final int HEIGHT = 30;
     public static final int WIDTH = 30;
