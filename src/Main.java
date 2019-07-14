@@ -1,20 +1,29 @@
 public class Main {
 
     public static void main(String[] args) {
-        int[][] f = Field.getField(Obstacle.getObstacle(), Config.startX, Config.startY, Config.finishX, Config.finishY);
-        System.out.println("INIT");
-        Display.displayField(f);
+        for (int i = 0; i < 100; i++) {
 
-        System.out.println("WITH WAVE");
-        f = Field.createFieldWave();
-        Display.displayField(f);
+            int[][] f = Field.getField(Obstacle.getObstacle(), Config.startX, Config.startY, Config.finishX, Config.finishY);
+            System.out.println("INIT");
+            Display.displayField(f);
 
-        System.out.println("WITH PATH");
-        f = Field.createPath();
-        Display.displayField(f);
+            System.out.println("WITH WAVE");
+            f = Field.createFieldWave();
+            Display.displayField(f);
 
-        System.out.println("FINAL VIEW");
+            System.out.println("WITH PATH");
+            f = Field.createPath();
+            Display.displayField(f);
 
-        Display.finalDisplayField(f);
+            System.out.println("FINAL VIEW");
+
+            Display.finalDisplayField(f);
+            try {
+
+                Thread.sleep(Config.LAG);
+            } catch (Exception e) {
+            }
+        }
     }
+
 }
