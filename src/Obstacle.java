@@ -6,6 +6,16 @@ public class Obstacle {
 
     public static int[][] getObstacle() {
         OBSTACLE = new int[Config.WIDTH][Config.HEIGHT];
+
+        //getStaticObstacle();
+        getRandomObstacle();
+        getRandomStringObstacle();
+
+
+        return OBSTACLE;
+    }
+
+    public static void getStaticObstacle() {
         setObstacle(5, 0);
         setObstacle(5, 1);
         setObstacle(5, 2);
@@ -104,13 +114,8 @@ public class Obstacle {
         setObstacle(21, 15);
         setObstacle(21, 16);
         setObstacle(21, 17);
-
-        getRandomObstacle();
-        getRandomStringObstacle();
-
-
-        return OBSTACLE;
     }
+
 
     public static void getRandomObstacle() {
         for (int i = 0; i < Config.randomObstacle; i++)

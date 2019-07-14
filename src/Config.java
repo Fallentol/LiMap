@@ -9,13 +9,13 @@ public class Config {
 
     public static final int HEIGHT = 30;
     public static final int WIDTH = 30;
-    public static final int LAG = 2000;
+    public static final int LAG = 2500;
     public static final int obstacleSign = 99;
     public static final int startSign = 1;
     public static final int finishSign = 88;
-    public static final int randomObstacle = 120;
+    public static final int randomObstacle = 180;
     public static final int randomObstacleLength = 5;
-    public static final int randomObstacleNumber = 15;
+    public static final int randomObstacleNumber = 20;
 
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_BLACK = "\u001B[30m";
