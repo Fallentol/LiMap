@@ -43,7 +43,9 @@ public class Field {
             }
         }
 
-        while (initW != null) {
+        int limit = 5000;
+        while (initW != null && limit > 0) {
+            limit--;
             initW = findPath(initW);
         }
 

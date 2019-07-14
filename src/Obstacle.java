@@ -22,6 +22,7 @@ public class Obstacle {
         setObstacle(5, 15);
 
 
+        setObstacle(11, 9);
         setObstacle(14, 9);
         setObstacle(13, 9);
         setObstacle(12, 9);
@@ -64,6 +65,8 @@ public class Obstacle {
         setObstacle(12, 14);
 
 
+        setObstacle(16, 21);
+        setObstacle(16, 22);
         setObstacle(16, 24);
         setObstacle(16, 23);
         setObstacle(16, 25);
@@ -80,6 +83,27 @@ public class Obstacle {
         setObstacle(5, 25);
         setObstacle(4, 25);
         setObstacle(1, 25);
+
+        setObstacle(21, 20);
+        setObstacle(21, 21);
+        setObstacle(21, 22);
+        setObstacle(21, 23);
+        setObstacle(21, 24);
+        setObstacle(21, 25);
+        setObstacle(21, 26);
+        setObstacle(21, 27);
+        setObstacle(21, 6);
+        setObstacle(21, 7);
+        setObstacle(21, 8);
+        setObstacle(21, 9);
+        setObstacle(21, 10);
+        setObstacle(21, 11);
+        setObstacle(21, 12);
+        setObstacle(21, 13);
+        setObstacle(21, 14);
+        setObstacle(21, 15);
+        setObstacle(21, 16);
+        setObstacle(21, 17);
 
         getRandomObstacle();
         getRandomStringObstacle();
@@ -116,6 +140,6 @@ public class Obstacle {
     }
 
     public static void setObstacle(int x, int y) {
-        OBSTACLE[x][y] = Config.obstacleSign;
+        OBSTACLE[y][x] = Config.obstacleSign;
     }
 }
