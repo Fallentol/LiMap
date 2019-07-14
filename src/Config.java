@@ -11,7 +11,7 @@ public class Config {
     public static final int obstacleSign = 99;
     public static final int startSign = 1;
     public static final int finishSign = 88;
-    public static final int randomObstacle = 110;
+    public static final int randomObstacle = 120;
     public static final int randomObstacleLength = 5;
     public static final int randomObstacleNumber = 15;
 }
