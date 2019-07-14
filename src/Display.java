@@ -18,9 +18,9 @@ public class Display {
                 if (f[i][j] == 99) {
                     System.out.print("■" + "\t");
                 } else if (f[i][j] == 88) {
-                    System.out.print("⌾" + "\t");
+                    System.out.print(Config.ANSI_YELLOW + "☢"  + Config.ANSI_RESET + "\t");
                 } else if (f[i][j] == 1) {
-                    System.out.print("⨷" + "\t");
+                    System.out.print(Config.ANSI_RED + "⨷"  + Config.ANSI_RESET + "\t");
                 } else {
                     System.out.print(" " + "\t");
                 }
