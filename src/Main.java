@@ -10,5 +10,12 @@ public class Main {
         Display.displayField(f);
 
 
+        System.out.println("WITH PATH");
+        f = Field.createPath();
+        Display.displayField(f);
+
+        System.out.println("FINAL VIEW");
+
+        Display.finalDisplayField(f);
     }
 }
